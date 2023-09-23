@@ -4,5 +4,5 @@
 </div>
 
 ## Github Stats
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yeetovd&show_icons=true&theme=tokyonight)]()
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yeetov&show_icons=true&theme=tokyonight)]()
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=yeetov&theme=tokyonight)]()
