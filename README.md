@@ -2,3 +2,7 @@
 <div style="width: 100%;">
   <img src="Untitled design (18).png" style="width: 100%;" alt="Profile hero">
 </div>
+
+## Github Stats
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yeetovd&show_icons=true&theme=tokyonight)]()
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=yeetov&theme=tokyonight)]()
