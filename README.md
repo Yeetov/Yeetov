@@ -7,3 +7,6 @@
 
 ## Holopin
 [![An image of @yeetov's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/yeetov)](https://holopin.io/@yeetov)
+
+## RiiTag
+![RiiTag](https://tag.rc24.xyz/789872551731527690/tag.png)
