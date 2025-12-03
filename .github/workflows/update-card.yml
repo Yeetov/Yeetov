@@ -1,0 +1,29 @@
+name: Update Battle Card
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Take Screenshot
+        uses: simonw/shot-scraper-action@v3.1
+        with:
+          url: 'https://yeetov.github.io/owbattlecard/?user=Aarontendo%232585'
+          output: 'profile-card.png'
+          width: 600
+          height: 150
+          # Wait 3s to ensure fonts/images load
+          wait: 3000 
+      - name: Commit and Push
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Update Battle Card" || exit 0
+          git push
