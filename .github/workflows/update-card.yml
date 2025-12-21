@@ -22,7 +22,7 @@ jobs:
       - name: Take Screenshot
         run: |
           # Waits 10s for API retries across regions
-          shot-scraper "https://yeetov.github.io/owbattlecard?user=Aarontendo" -o profile-card.png --width 600 --height 150 --wait 10000
+          shot-scraper "https://yeetov.github.io/owbattlecard/?user=Aarontendo" -o profile-card.png --width 600 --height 150 --wait 10000
       - name: Commit and Push
         run: |-
           git config user.name "Automated"
