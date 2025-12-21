@@ -1,7 +1,7 @@
 name: Update Battle Card
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -21,7 +21,8 @@ jobs:
           shot-scraper install
       - name: Take Screenshot
         run: |
-          shot-scraper "https://yeetov.github.io/owbattlecard/?user=Aarontendo%232585" -o profile-card.png --width 600 --height 150 --wait 3000
+          # Waits 10s for API retries across regions
+          shot-scraper "https://yeetov.github.io/owbattlecard?user=Aarontendo" -o profile-card.png --width 600 --height 150 --wait 10000
       - name: Commit and Push
         run: |-
           git config user.name "Automated"
