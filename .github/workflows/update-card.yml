@@ -21,8 +21,8 @@ jobs:
           shot-scraper install
       - name: Take Screenshot
         run: |
-          # Waits 10s for API retries across regions
-          shot-scraper "https://yeetov.github.io/owbattlecard/?user=Aarontendo" -o profile-card.png --width 600 --height 150 --wait 10000
+          # Waits 15s to allow for API retries and targets specific element
+          shot-scraper "https://yeetov.github.io/owbattlecard/?user=Aarontendo" --selector "#battleCard" -o profile-card.png --wait 15000
       - name: Commit and Push
         run: |-
           git config user.name "Automated"
